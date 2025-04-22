@@ -101,6 +101,14 @@ export default function ChatForm({ className, ...props}: React.ComponentProps<"f
                         </Button>
                     )}
                 </div>
+
+                <div className="flex-1 content-center overflow-y-auto px-6">
+                    {messages.length ? messageList : header}
+                </div>
+
+                <form onSubmit={handleSubmit} className="border">
+
+                </form>
         
 
         </main>
